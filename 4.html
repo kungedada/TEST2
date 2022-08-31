@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				perspective: 400px;
+			}
+			.w{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				margin: 100px auto;
+				transition: all 1s;
+				transform-style: preserve-3d;
+			}
+			.w:hover{
+				transform: rotateY(180deg);
+			}
+			.zheng{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: pink;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 300px;
+				z-index: 1;
+				backface-visibility: hidden;
+			}
+			.fang{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: paleturquoise;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 300px;
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="w">
+			<div class="zheng">
+				这是正面
+			</div>
+			<div class="fang">
+				你看勾八
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			@keyframes move{
+				from{left: 0;}
+				to{left: 50%;transform: translate(-50%,0);}
+			}
+			@keyframes zou{
+				0%{
+					background-position: 0px;
+				}
+				100%{
+					background-position: -1472px;
+				}
+			}
+			.w{
+				position:absolute;
+				left: 0px;
+				top:200px;
+				width: 184px;
+				height: 325px;
+				overflow: hidden;
+				animation: move 3s forwards,zou 1s infinite steps(8);
+				background: url(img/走动图.png) no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="w">
+		</div>
+	</body>
+</html>

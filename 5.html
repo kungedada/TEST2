@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				background: linear-gradient(plum, paleturquoise);
+			}
+			@keyframes move{
+				0%{
+					top: 350px;
+				}
+				100%{
+					top:0;
+				}
+			}
+			@keyframes xiadiao{
+				from{margin:0;}
+				to{margin: 150px 0;}
+			}
+			.w{
+				width: 700px;
+				margin: 0 auto;
+			}
+			.hezi{
+				position: relative;
+				margin: 150px 0;
+				width: 700px;
+				height: 500px;
+				border-radius: 25%;
+				background: url(img/注册图.jpg) no-repeat;
+				background-size: 140%;
+				
+			}
+			.xiak{
+				overflow: hidden;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 350px;
+				height: 250px;
+			}
+			input{
+				font-size: 20px;
+				color: coral;
+				font-weight: 300;
+				font-family:"幼圆";
+				border-top-right-radius: 50%;
+				margin-top: 30px;
+
+			}
+			input,label{
+				position: relative;
+				animation: move 1s 1;
+				color: red;
+			}
+			input[type^=submit]{
+				width: 80px;
+				height: 30px;
+				margin: 70px;
+			}
+			input[type^=button]{
+				width: 80px;
+				height: 30px;
+			}
+			input[type^=submit]:hover{
+				background-color: lightcyan;
+				box-shadow: 0 0 12px lightgreen;
+			}
+			input[type^=button]:hover{
+				background-color: lightcyan;
+				box-shadow: 0 0 12px lightgreen;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="w">
+			<div class="hezi">
+				<div class="xiak">
+						<label>用户名：</label>
+						<input type="text" value="">
+						<label>密&nbsp;&nbsp;&nbsp;码：</label>
+						<input type="password" value="">
+						<form>
+							<input type="submit" name="" id="" value="登录" onclick="alert('没有完成')"/>
+							<input type="button" name="" id="" value="注册" onclick="alert('没有完成')"/>
+						</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script></script>
+</html>
